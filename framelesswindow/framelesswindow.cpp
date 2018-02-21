@@ -49,10 +49,10 @@ void FramelessWindow::changeEvent(QEvent *event)
 {
   if (event->type() == QEvent::WindowStateChange) {
     if (windowState().testFlag(Qt::WindowNoState)) {
-      on_restoreButton_clicked();
+      //on_restoreButton_clicked();
       event->ignore();
     } else if (windowState().testFlag(Qt::WindowMaximized)) {
-      on_maximizeButton_clicked();
+      //on_maximizeButton_clicked();
       event->ignore();
     }
   }

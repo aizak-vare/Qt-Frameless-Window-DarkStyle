@@ -38,7 +38,11 @@
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">#windowFrame{border:1px solid palette(highlight); border-radius:5px 5px 5px 5px; background-color:palette(Window);}</string>
+      <string notr="true">#windowFrame {
+	border:1px solid palette(highlight); 
+	border-radius:1px 1px 1px 1px; 
+	background-color:palette(Window);
+}</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <property name="spacing">
@@ -74,7 +78,13 @@
          <bool>false</bool>
         </property>
         <property name="styleSheet">
-         <string notr="true">#windowTitlebar{border: 0px none palette(base); border-top-left-radius:5px; border-top-right-radius:5px; background-color:palette(shadow); height:20px;}</string>
+         <string notr="true">#windowTitlebar {
+	border: 0px none palette(base);
+	border-top-left-radius:1px; 
+	border-top-right-radius:1px; 
+	background-color:palette(shadow); 
+	height:30px;
+}</string>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <property name="spacing">
@@ -219,13 +229,16 @@
       </item>
       <item>
        <widget class="QWidget" name="windowContent" native="true">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="autoFillBackground">
          <bool>false</bool>
         </property>
         <property name="styleSheet">
          <string notr="true">#windowContent{
   border: 0px none palette(base);
-  border-radius:0px 0px 5px 5px;
+  border-radius:0px 0px 1px 1px;
 }</string>
         </property>
        </widget>
@@ -244,6 +257,8 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../framelesswindow.qrc"/>
+ </resources>
  <connections/>
 </ui>
